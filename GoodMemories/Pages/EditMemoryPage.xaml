@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodMemories.Pages.EditMemoryPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#C2D6D4">
+            <Label Text="EDIT MEMORY" FontSize="40" FontFamily="Yanone" TextColor="#468189" VerticalOptions="Start" Rotation="-10" Margin="20"></Label>
+
+            <!-- Labels and entry forms for new memory -->
+            <Frame Margin="0,20,0,20" CornerRadius="20" HorizontalOptions="CenterAndExpand" WidthRequest="320">
+                <StackLayout>
+                    <Label Text="Name" FontSize="20" FontFamily="YanoneLight" TextColor="#06324B"></Label>
+                    <Entry x:Name="nameEntry"></Entry>
+                    <Label Text="Date" FontSize="20" FontFamily="YanoneLight" TextColor="#06324B"></Label>
+                    <Entry x:Name="dateEntry"></Entry>
+                    <Label Text="Description" FontSize="20" FontFamily="YanoneLight" TextColor="#06324B"></Label>
+                    <Editor x:Name="descriptionEntry" HeightRequest="100"></Editor>
+                </StackLayout>
+            </Frame>
+
+            <!-- Button to add new memory to database -->
+            <Button x:Name="AddMemoryButton" Text="Remember me!" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="End" FontFamily="Yanone" TextColor="#468189" FontSize="24" Clicked="AddMemoryButton_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodMemories.Pages.HomePage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#c2d6d4">
+
+            <Frame CornerRadius="20" WidthRequest="300" HeightRequest="300" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
+                    <Label Text="TODAY'S MEMORY" HorizontalOptions="Center" FontSize="35" FontFamily="Yanone" TextColor="#468189"></Label>
+                    <Label x:Name="todaysMemoryHeader" HorizontalOptions="Center" IsVisible="False" FontSize="28" FontFamily="Yanone" TextColor="#031926"></Label>
+                    <Label x:Name="todaysMemoryBody" HorizontalOptions="Center" IsVisible="False" FontSize="20" FontFamily="YanoneLight" TextColor="#4E5155"></Label>
+                    <Button x:Name="viewTodaysMemoryButton" Text="View" Clicked="OpenCurrentMemory" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="White" FontFamily="Yanone" FontSize="20" TextColor="#06324B" IsVisible="False"></Button>
+                </StackLayout>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" Margin="20">
+                <Button x:Name="viewAllButton" Text="View All" HorizontalOptions="CenterAndExpand" BackgroundColor="White" FontFamily="Yanone" FontSize="20" TextColor="#06324B" Clicked="ViewAllButton_Clicked"></Button>
+                <Button x:Name="addMemoryButton" Text="Add" HorizontalOptions="CenterAndExpand" BackgroundColor="White" FontFamily="Yanone" FontSize="20" TextColor="#06324B" Clicked="AddMemoryButton_Clicked"></Button>
+            </StackLayout>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodMemories.MainPage">
+
+    <ContentPage.Content>
+        <!-- Grid Configuration -->
+        <Grid BackgroundColor="#C2D6D4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Clouds Above Text-->
+            <Image Source="cloud.png" HorizontalOptions="Start" Grid.Row="0" TranslationX="50" TranslationY="15"></Image>
+            <Image Source="cloud.png" HorizontalOptions="Start" Grid.Row="0" TranslationX="20" TranslationY="50"></Image>
+
+
+            <!-- Title Text -->
+            <StackLayout x:Name="title" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Opacity="0">
+                <Label TextColor="#468189" FontSize="90" FontFamily="Mick Caster" HorizontalOptions="Center">Good</Label>
+                <Label TextColor="#468189" FontSize="90" FontFamily="Mick Caster" HorizontalOptions="Center">Memories</Label>
+            </StackLayout>
+            
+            <!-- Clouds Below Text -->
+            <!-- Clouds Above Text-->
+            <Image Source="cloud.png" HorizontalOptions="End" Grid.Row="2" TranslationX="-50" TranslationY="-15"></Image>
+            <Image Source="cloud.png" HorizontalOptions="End" Grid.Row="2" TranslationX="-20" TranslationY="-50"></Image>
+    
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

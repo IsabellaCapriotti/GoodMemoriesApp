@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodMemories.Pages.ViewMemoryPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#C2D6D4">
+            <Label x:Name="memoryLabel" Text="YOUR MEMORY" FontSize="40" FontFamily="Yanone" TextColor="#468189" VerticalOptions="Start" Rotation="-10" Margin="20"></Label>
+            
+            <!-- Information on memory -->
+            <Frame Margin="0,20,0,20" CornerRadius="20" HorizontalOptions="CenterAndExpand" WidthRequest="320">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Date: " FontSize="20" FontFamily="YanoneLight" TextColor="#06324B"></Label>
+                        <Label x:Name="dateField" FontSize="20" FontFamily="YanoneLight" TextColor="#06324B"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Description: " FontSize="20" FontFamily="YanoneLight" TextColor="#06324B"></Label>
+                        <Label x:Name="descriptionField" FontSize="20" FontFamily="YanoneLight" TextColor="#06324B"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            
+            <!-- Edit Button -->
+            <Button x:Name="editMemoryButton" HorizontalOptions="End" VerticalOptions="EndAndExpand" Margin="35"  Text="Edit" BackgroundColor="White" FontFamily="Yanone" FontSize="20" TextColor="#06324B" Clicked="EditMemoryButton_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
